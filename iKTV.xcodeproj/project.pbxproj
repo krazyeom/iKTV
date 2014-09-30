@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F33A9BC3CACF4F2474E1485 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 480A6E9557FF88220FBBB5EC /* libPods.a */; };
+		CE66D6F319DADFB100F89F22 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F219DADFB100F89F22 /* VideoViewController.m */; };
+		CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */; };
+		CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE66D6F719DAE27200F89F22 /* program_list.plist */; };
 		CEEB938F19D9A4FE00471A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB938E19D9A4FE00471A38 /* main.m */; };
 		CEEB939219D9A4FE00471A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB939119D9A4FE00471A38 /* AppDelegate.m */; };
-		CEEB939519D9A4FE00471A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB939419D9A4FE00471A38 /* ViewController.m */; };
-		CEEB939819D9A4FE00471A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB939619D9A4FE00471A38 /* Main.storyboard */; };
 		CEEB939A19D9A4FE00471A38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB939919D9A4FE00471A38 /* Images.xcassets */; };
 		CEEB939D19D9A4FE00471A38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB939B19D9A4FE00471A38 /* LaunchScreen.xib */; };
 		CEEB93A919D9A4FE00471A38 /* iKTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB93A819D9A4FE00471A38 /* iKTVTests.m */; };
@@ -26,20 +28,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEEB93CA19D9A56300471A38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		28DDF4276B9721E6BBC35955 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		480A6E9557FF88220FBBB5EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD722F21B59B4CDBB8E3C08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE66D6F119DADFB100F89F22 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		CE66D6F219DADFB100F89F22 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		CE66D6F419DADFDD00F89F22 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		CE66D6F719DAE27200F89F22 /* program_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = program_list.plist; sourceTree = "<group>"; };
 		CEEB938919D9A4FE00471A38 /* iKTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB938D19D9A4FE00471A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEB938E19D9A4FE00471A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEB939019D9A4FE00471A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEEB939119D9A4FE00471A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEEB939319D9A4FE00471A38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEEB939419D9A4FE00471A38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEEB939719D9A4FE00471A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEEB939919D9A4FE00471A38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEEB939C19D9A4FE00471A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CEEB93A219D9A4FE00471A38 /* iKTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB93A719D9A4FE00471A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEB93A819D9A4FE00471A38 /* iKTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iKTVTests.m; sourceTree = "<group>"; };
+		CEEB93B819D9A56300471A38 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F33A9BC3CACF4F2474E1485 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F94A4A7B352E4A13C52D2DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BD722F21B59B4CDBB8E3C08 /* Pods.debug.xcconfig */,
+				28DDF4276B9721E6BBC35955 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEEB938019D9A4FE00471A38 = {
 			isa = PBXGroup;
 			children = (
 				CEEB938B19D9A4FE00471A38 /* iKTV */,
 				CEEB93A519D9A4FE00471A38 /* iKTVTests */,
+				CEEB93B719D9A56300471A38 /* Frameworks */,
 				CEEB938A19D9A4FE00471A38 /* Products */,
+				1F94A4A7B352E4A13C52D2DA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +116,10 @@
 			children = (
 				CEEB939019D9A4FE00471A38 /* AppDelegate.h */,
 				CEEB939119D9A4FE00471A38 /* AppDelegate.m */,
-				CEEB939319D9A4FE00471A38 /* ViewController.h */,
-				CEEB939419D9A4FE00471A38 /* ViewController.m */,
-				CEEB939619D9A4FE00471A38 /* Main.storyboard */,
+				CE66D6F419DADFDD00F89F22 /* ListTableViewController.h */,
+				CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */,
+				CE66D6F119DADFB100F89F22 /* VideoViewController.h */,
+				CE66D6F219DADFB100F89F22 /* VideoViewController.m */,
 				CEEB939919D9A4FE00471A38 /* Images.xcassets */,
 				CEEB939B19D9A4FE00471A38 /* LaunchScreen.xib */,
 				CEEB938C19D9A4FE00471A38 /* Supporting Files */,
@@ -96,6 +130,7 @@
 		CEEB938C19D9A4FE00471A38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE66D6F719DAE27200F89F22 /* program_list.plist */,
 				CEEB938D19D9A4FE00471A38 /* Info.plist */,
 				CEEB938E19D9A4FE00471A38 /* main.m */,
 			);
@@ -119,6 +154,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEEB93B719D9A56300471A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB93B819D9A56300471A38 /* NotificationCenter.framework */,
+				480A6E9557FF88220FBBB5EC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEB93AC19D9A4FE00471A38 /* Build configuration list for PBXNativeTarget "iKTV" */;
 			buildPhases = (
+				3FD5A2A410F96AF7767994E5 /* Check Pods Manifest.lock */,
 				CEEB938519D9A4FE00471A38 /* Sources */,
 				CEEB938619D9A4FE00471A38 /* Frameworks */,
 				CEEB938719D9A4FE00471A38 /* Resources */,
+				CEEB93CA19D9A56300471A38 /* Embed App Extensions */,
+				934B1FEC19EA9B4C871DAB5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +215,7 @@
 				TargetAttributes = {
 					CEEB938819D9A4FE00471A38 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2SKH6S9PWK;
 					};
 					CEEB93A119D9A4FE00471A38 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -199,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB939819D9A4FE00471A38 /* Main.storyboard in Resources */,
+				CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */,
 				CEEB939D19D9A4FE00471A38 /* LaunchScreen.xib in Resources */,
 				CEEB939A19D9A4FE00471A38 /* Images.xcassets in Resources */,
 			);
@@ -214,14 +262,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FD5A2A410F96AF7767994E5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		934B1FEC19EA9B4C871DAB5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEEB938519D9A4FE00471A38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB939519D9A4FE00471A38 /* ViewController.m in Sources */,
+				CE66D6F319DADFB100F89F22 /* VideoViewController.m in Sources */,
 				CEEB939219D9A4FE00471A38 /* AppDelegate.m in Sources */,
 				CEEB938F19D9A4FE00471A38 /* main.m in Sources */,
+				CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +326,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEEB939619D9A4FE00471A38 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEEB939719D9A4FE00471A38 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEEB939B19D9A4FE00471A38 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +354,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -297,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -322,7 +397,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -333,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,21 +419,33 @@
 		};
 		CEEB93AD19D9A4FE00471A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD722F21B59B4CDBB8E3C08 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iKTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		CEEB93AE19D9A4FE00471A38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DDF4276B9721E6BBC35955 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
 				INFOPLIST_FILE = iKTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1888ff1e-252a-4686-b49f-dca65b51e384";
 			};
 			name = Release;
 		};
@@ -414,6 +502,7 @@
 				CEEB93AE19D9A4FE00471A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEEB93AF19D9A4FE00471A38 /* Build configuration list for PBXNativeTarget "iKTVTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +511,7 @@
 				CEEB93B119D9A4FE00471A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

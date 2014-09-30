@@ -8,7 +8,15 @@
 
 #import "AppDelegate.h"
 
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+
+#import "ListTableViewController.h"
+#import "VideoViewController.h"
+
 @interface AppDelegate ()
+
+typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * drawerController, MMDrawerSide drawerSide, CGFloat percentVisible);
 
 @end
 
@@ -16,7 +24,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch.
+
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  
+  ListTableViewController *left = [[ListTableViewController alloc] initWithStyle:UITableViewStylePlain];
+  VideoViewController *center = [[VideoViewController alloc] init];
+  [center.view setBackgroundColor:[UIColor whiteColor]];
+  
+  MMDrawerController *root = [[MMDrawerController alloc] initWithCenterViewController:center leftDrawerViewController:left];
+  root.view.backgroundColor = [UIColor whiteColor];
+  
+  [root setMaximumLeftDrawerWidth:200.0];
+  [root setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+  [root setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+  
+  MMDrawerControllerDrawerVisualStateBlock visualStateBlock = [MMDrawerVisualState swingingDoorVisualStateBlock];
+  
+  [root setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+     MMDrawerControllerDrawerVisualStateBlock block = visualStateBlock;
+     block(drawerController, drawerSide, percentVisible);
+   }];
+  
+  if(floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1){
+    UIColor * tintColor = [UIColor colorWithRed:29.0/255.0
+                                          green:173.0/255.0
+                                           blue:234.0/255.0
+                                          alpha:1.0];
+    [self.window setTintColor:tintColor];
+  }
+  
+  [self.window setRootViewController:root];
+  [self.window makeKeyAndVisible];
+
   return YES;
 }
 
