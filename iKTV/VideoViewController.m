@@ -23,6 +23,10 @@
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playVideo:) name:@"noti" object:nil];  
 }
 
+- (void)playLastViewedChannel {
+  [self playVideoWithURL:[self loadLastViewedChannel]];
+}
+
 - (void)playVideoWithURL:(NSString *)url{
   NSURL *movieURL = [NSURL URLWithString:url];
   self.moviePlayer.contentURL = movieURL;
@@ -39,9 +43,6 @@
 
 - (NSString *)loadLastViewedChannel {
   NSString *channel = [[NSUserDefaults standardUserDefaults] stringForKey:@"channel"];
-  if (channel == nil) {
-    channel = @"http://120.50.142.154/hls/ag0stream.m3u8";
-  }
   return channel;
 }
 

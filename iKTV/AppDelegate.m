@@ -13,6 +13,7 @@
 
 #import "ListTableViewController.h"
 #import "VideoViewController.h"
+#import "CreditsViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,22 +29,24 @@ typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * dr
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   
   ListTableViewController *left = [[ListTableViewController alloc] initWithStyle:UITableViewStylePlain];
-  VideoViewController *center = [[VideoViewController alloc] init];
-  [center.view setBackgroundColor:[UIColor whiteColor]];
+  CreditsViewController *right = [[CreditsViewController alloc] init];
+  _center = [[VideoViewController alloc] init];
   
-  MMDrawerController *root = [[MMDrawerController alloc] initWithCenterViewController:center leftDrawerViewController:left];
+  [_center.view setBackgroundColor:[UIColor whiteColor]];
+  
+  MMDrawerController *root = [[MMDrawerController alloc] initWithCenterViewController:_center leftDrawerViewController:left rightDrawerViewController:right];
   root.view.backgroundColor = [UIColor whiteColor];
   
   [root setMaximumLeftDrawerWidth:200.0];
   [root setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
   [root setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
   
-  MMDrawerControllerDrawerVisualStateBlock visualStateBlock = [MMDrawerVisualState swingingDoorVisualStateBlock];
+//  MMDrawerControllerDrawerVisualStateBlock visualStateBlock = [MMDrawerVisualState swingingDoorVisualStateBlock];
   
-  [root setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-     MMDrawerControllerDrawerVisualStateBlock block = visualStateBlock;
-     block(drawerController, drawerSide, percentVisible);
-   }];
+//  [root setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//     MMDrawerControllerDrawerVisualStateBlock block = visualStateBlock;
+//     block(drawerController, drawerSide, percentVisible);
+//   }];
   
   if(floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1){
     UIColor * tintColor = [UIColor colorWithRed:29.0/255.0
@@ -75,6 +78,7 @@ typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * dr
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  [_center playLastViewedChannel];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

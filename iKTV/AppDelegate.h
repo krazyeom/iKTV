@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) VideoViewController *center;
 
 
 @end
