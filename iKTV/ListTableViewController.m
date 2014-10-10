@@ -16,12 +16,16 @@
 
 @interface ListTableViewController ()
 @property (strong) RLMArray *channels;
+@property (strong) RLMArray *server;
 @end
 
 @implementation ListTableViewController
 
 - (void)viewDidLoad {
-  _channels = [Channel allObjects];
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"ktv" ofType:@"realm"];
+  RLMRealm *realm  = [RLMRealm realmWithPath:path]; // Create realm pointing to default file
+  _channels = [Channel allObjectsInRealm:realm];
+  _server = [Server allObjectsInRealm:realm];
   [super viewDidLoad];
 }
 
@@ -60,7 +64,7 @@
 
 - (NSString *)channelURLWithIndex:(NSInteger)index {
   NSInteger serverInteger = RAND_FROM_TO(12, 15);
-  NSString *temp1 = [(Server *)[[Server allObjects] firstObject] url];
+  NSString *temp1 = [(Server *)[_server firstObject] url];
   NSString *temp2 = [@(serverInteger) stringValue];
   NSString *temp3 = [(Channel *)[_channels objectAtIndex:index] channelNum];
   NSString *temp4 = [(Channel *)[_channels objectAtIndex:index] quality];

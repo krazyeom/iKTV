@@ -30,9 +30,6 @@ typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * dr
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"ktv" ofType:@"realm"];
-  [RLMRealm realmWithPath:path]; // Create realm pointing to default file
-  
   ListTableViewController *left = [[ListTableViewController alloc] initWithStyle:UITableViewStylePlain];
   CreditsViewController *right = [[CreditsViewController alloc] init];
   _center = [[VideoViewController alloc] init];
