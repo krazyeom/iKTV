@@ -15,6 +15,8 @@
 #import "VideoViewController.h"
 #import "CreditsViewController.h"
 
+#import <Realm/Realm.h>
+
 @interface AppDelegate ()
 
 typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * drawerController, MMDrawerSide drawerSide, CGFloat percentVisible);
@@ -27,6 +29,9 @@ typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * dr
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"ktv" ofType:@"realm"];
+  [RLMRealm realmWithPath:path]; // Create realm pointing to default file
   
   ListTableViewController *left = [[ListTableViewController alloc] initWithStyle:UITableViewStylePlain];
   CreditsViewController *right = [[CreditsViewController alloc] init];

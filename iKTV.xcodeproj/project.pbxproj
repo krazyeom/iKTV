@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4F33A9BC3CACF4F2474E1485 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 480A6E9557FF88220FBBB5EC /* libPods.a */; };
+		CE653DF719E12CEB00D0B055 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE653DF619E12CEB00D0B055 /* CreditsViewController.m */; };
+		CE653DFA19E1325E00D0B055 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = CE653DF819E1325E00D0B055 /* iTunesArtwork */; };
+		CE653DFB19E1325E00D0B055 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */; };
+		CE6648E719E7C9B80008816F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6648E619E7C9B80008816F /* libc++.dylib */; };
+		CE6648EA19E7C9EE0008816F /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6648E919E7C9EE0008816F /* Server.m */; };
+		CE6648EE19E7DAC60008816F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6648ED19E7DAC60008816F /* Realm.framework */; };
+		CE6648F119E7DDBA0008816F /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6648F019E7DDBA0008816F /* Channel.m */; };
+		CE6648F319E7E8F50008816F /* ktv.realm in Resources */ = {isa = PBXBuildFile; fileRef = CE6648F219E7E8F50008816F /* ktv.realm */; };
 		CE66D6F319DADFB100F89F22 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F219DADFB100F89F22 /* VideoViewController.m */; };
 		CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */; };
 		CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE66D6F719DAE27200F89F22 /* program_list.plist */; };
@@ -45,6 +53,17 @@
 		28DDF4276B9721E6BBC35955 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		480A6E9557FF88220FBBB5EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD722F21B59B4CDBB8E3C08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE653DF519E12CEB00D0B055 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		CE653DF619E12CEB00D0B055 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		CE653DF819E1325E00D0B055 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		CE6648E619E7C9B80008816F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CE6648E819E7C9EE0008816F /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Server.h; path = ../Server.h; sourceTree = "<group>"; };
+		CE6648E919E7C9EE0008816F /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Server.m; path = ../Server.m; sourceTree = "<group>"; };
+		CE6648ED19E7DAC60008816F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		CE6648EF19E7DDBA0008816F /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		CE6648F019E7DDBA0008816F /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		CE6648F219E7E8F50008816F /* ktv.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ktv.realm; sourceTree = "<group>"; };
 		CE66D6F119DADFB100F89F22 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		CE66D6F219DADFB100F89F22 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		CE66D6F419DADFDD00F89F22 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
@@ -68,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6648EE19E7DAC60008816F /* Realm.framework in Frameworks */,
+				CE6648E719E7C9B80008816F /* libc++.dylib in Frameworks */,
 				4F33A9BC3CACF4F2474E1485 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,8 +141,14 @@
 				CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */,
 				CE66D6F119DADFB100F89F22 /* VideoViewController.h */,
 				CE66D6F219DADFB100F89F22 /* VideoViewController.m */,
+				CE653DF519E12CEB00D0B055 /* CreditsViewController.h */,
+				CE653DF619E12CEB00D0B055 /* CreditsViewController.m */,
 				CEEB939919D9A4FE00471A38 /* Images.xcassets */,
 				CEEB939B19D9A4FE00471A38 /* LaunchScreen.xib */,
+				CE6648E819E7C9EE0008816F /* Server.h */,
+				CE6648E919E7C9EE0008816F /* Server.m */,
+				CE6648EF19E7DDBA0008816F /* Channel.h */,
+				CE6648F019E7DDBA0008816F /* Channel.m */,
 				CEEB938C19D9A4FE00471A38 /* Supporting Files */,
 			);
 			path = iKTV;
@@ -130,6 +157,9 @@
 		CEEB938C19D9A4FE00471A38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE6648F219E7E8F50008816F /* ktv.realm */,
+				CE653DF819E1325E00D0B055 /* iTunesArtwork */,
+				CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */,
 				CE66D6F719DAE27200F89F22 /* program_list.plist */,
 				CEEB938D19D9A4FE00471A38 /* Info.plist */,
 				CEEB938E19D9A4FE00471A38 /* main.m */,
@@ -157,6 +187,8 @@
 		CEEB93B719D9A56300471A38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6648ED19E7DAC60008816F /* Realm.framework */,
+				CE6648E619E7C9B80008816F /* libc++.dylib */,
 				CEEB93B819D9A56300471A38 /* NotificationCenter.framework */,
 				480A6E9557FF88220FBBB5EC /* libPods.a */,
 			);
@@ -247,9 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE653DFB19E1325E00D0B055 /* iTunesArtwork@2x in Resources */,
 				CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */,
 				CEEB939D19D9A4FE00471A38 /* LaunchScreen.xib in Resources */,
+				CE6648F319E7E8F50008816F /* ktv.realm in Resources */,
 				CEEB939A19D9A4FE00471A38 /* Images.xcassets in Resources */,
+				CE653DFA19E1325E00D0B055 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE66D6F319DADFB100F89F22 /* VideoViewController.m in Sources */,
+				CE6648F119E7DDBA0008816F /* Channel.m in Sources */,
+				CE653DF719E12CEB00D0B055 /* CreditsViewController.m in Sources */,
 				CEEB939219D9A4FE00471A38 /* AppDelegate.m in Sources */,
 				CEEB938F19D9A4FE00471A38 /* main.m in Sources */,
+				CE6648EA19E7C9EE0008816F /* Server.m in Sources */,
 				CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +463,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iKTV",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iKTV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +484,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Youngho Kim  (2SKH6S9PWK)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iKTV",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iKTV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
