@@ -65,7 +65,6 @@
   NSString *temp3 = [(Channel *)[_channels objectAtIndex:index] channelNum];
   NSString *temp4 = [(Channel *)[_channels objectAtIndex:index] quality];
   NSString *url = [NSString stringWithFormat:@"%@%@/live/1%@%@.m3u8?sid=", temp1, temp2, temp3, temp4];
-  NSLog(@"%@", url);
   return url;
 }
 

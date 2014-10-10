@@ -12,13 +12,12 @@
 		CE653DFA19E1325E00D0B055 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = CE653DF819E1325E00D0B055 /* iTunesArtwork */; };
 		CE653DFB19E1325E00D0B055 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */; };
 		CE6648E719E7C9B80008816F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6648E619E7C9B80008816F /* libc++.dylib */; };
-		CE6648EA19E7C9EE0008816F /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6648E919E7C9EE0008816F /* Server.m */; };
 		CE6648EE19E7DAC60008816F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6648ED19E7DAC60008816F /* Realm.framework */; };
 		CE6648F119E7DDBA0008816F /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6648F019E7DDBA0008816F /* Channel.m */; };
 		CE6648F319E7E8F50008816F /* ktv.realm in Resources */ = {isa = PBXBuildFile; fileRef = CE6648F219E7E8F50008816F /* ktv.realm */; };
+		CE66490C19E7F8960008816F /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66490B19E7F8960008816F /* Server.m */; };
 		CE66D6F319DADFB100F89F22 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F219DADFB100F89F22 /* VideoViewController.m */; };
 		CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */; };
-		CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE66D6F719DAE27200F89F22 /* program_list.plist */; };
 		CEEB938F19D9A4FE00471A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB938E19D9A4FE00471A38 /* main.m */; };
 		CEEB939219D9A4FE00471A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB939119D9A4FE00471A38 /* AppDelegate.m */; };
 		CEEB939A19D9A4FE00471A38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB939919D9A4FE00471A38 /* Images.xcassets */; };
@@ -58,17 +57,16 @@
 		CE653DF819E1325E00D0B055 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		CE6648E619E7C9B80008816F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		CE6648E819E7C9EE0008816F /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Server.h; path = ../Server.h; sourceTree = "<group>"; };
-		CE6648E919E7C9EE0008816F /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Server.m; path = ../Server.m; sourceTree = "<group>"; };
 		CE6648ED19E7DAC60008816F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		CE6648EF19E7DDBA0008816F /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
 		CE6648F019E7DDBA0008816F /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
 		CE6648F219E7E8F50008816F /* ktv.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ktv.realm; sourceTree = "<group>"; };
+		CE66490A19E7F8960008816F /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		CE66490B19E7F8960008816F /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		CE66D6F119DADFB100F89F22 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		CE66D6F219DADFB100F89F22 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		CE66D6F419DADFDD00F89F22 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		CE66D6F519DADFDD00F89F22 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
-		CE66D6F719DAE27200F89F22 /* program_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = program_list.plist; sourceTree = "<group>"; };
 		CEEB938919D9A4FE00471A38 /* iKTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB938D19D9A4FE00471A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEB938E19D9A4FE00471A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,8 +143,8 @@
 				CE653DF619E12CEB00D0B055 /* CreditsViewController.m */,
 				CEEB939919D9A4FE00471A38 /* Images.xcassets */,
 				CEEB939B19D9A4FE00471A38 /* LaunchScreen.xib */,
-				CE6648E819E7C9EE0008816F /* Server.h */,
-				CE6648E919E7C9EE0008816F /* Server.m */,
+				CE66490A19E7F8960008816F /* Server.h */,
+				CE66490B19E7F8960008816F /* Server.m */,
 				CE6648EF19E7DDBA0008816F /* Channel.h */,
 				CE6648F019E7DDBA0008816F /* Channel.m */,
 				CEEB938C19D9A4FE00471A38 /* Supporting Files */,
@@ -160,7 +158,6 @@
 				CE6648F219E7E8F50008816F /* ktv.realm */,
 				CE653DF819E1325E00D0B055 /* iTunesArtwork */,
 				CE653DF919E1325E00D0B055 /* iTunesArtwork@2x */,
-				CE66D6F719DAE27200F89F22 /* program_list.plist */,
 				CEEB938D19D9A4FE00471A38 /* Info.plist */,
 				CEEB938E19D9A4FE00471A38 /* main.m */,
 			);
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE653DFB19E1325E00D0B055 /* iTunesArtwork@2x in Resources */,
-				CE66D6F819DAE27200F89F22 /* program_list.plist in Resources */,
 				CEEB939D19D9A4FE00471A38 /* LaunchScreen.xib in Resources */,
 				CE6648F319E7E8F50008816F /* ktv.realm in Resources */,
 				CEEB939A19D9A4FE00471A38 /* Images.xcassets in Resources */,
@@ -340,8 +336,8 @@
 				CE653DF719E12CEB00D0B055 /* CreditsViewController.m in Sources */,
 				CEEB939219D9A4FE00471A38 /* AppDelegate.m in Sources */,
 				CEEB938F19D9A4FE00471A38 /* main.m in Sources */,
-				CE6648EA19E7C9EE0008816F /* Server.m in Sources */,
 				CE66D6F619DADFDD00F89F22 /* ListTableViewController.m in Sources */,
+				CE66490C19E7F8960008816F /* Server.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
